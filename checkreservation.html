@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Indian Airways</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+      
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900|Satisfy&display=swap");
+      *,
+     
+      p {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .section-1 {
+        height: 100vh;
+      }
+
+      .header-info {
+        background-color:yellow;
+        height: 5vh;
+      }
+      .header-info p {
+        color:black;
+        padding-left: 50px;
+        padding-right: 30px;
+        font-family: "arial";
+        font-size: small;
+        
+      }
+      .navigation-bar {
+        box-shadow: 0px 0px 10px grey;
+        height: 10vh;
+        box-sizing: border-box;
+      }
+      .logo,
+      .navbar {
+        flex-grow: 1;
+        
+      }
+      .logo img {
+        block-size: 50px;
+      }
+      .logo h5 {
+        color: steelblue;
+        font-family: cursive;
+        font-weight: bold;
+        padding: 15px;
+      }
+      .nav-item a {
+        
+        font-family: "times new roman";
+        margin-left: 20px;
+        color: #2f3542;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.5s;
+      }
+
+      .nav-item a:hover {
+        color:red;
+      }
+      .navbar-nav {
+        position: relative;
+        left: 60px;
+      }
+
+      body {
+        background-image: url("flight.jpg");
+        background-color: #cccccc;
+        height: 84vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .stylis-text h2 {
+        font-size: 50px;
+        font-weight: bold;
+        
+        color: #fde02f;
+        font-family: "times new roman";
+        
+        
+        text-align: center;
+        left: 100%;
+        
+      }
+ </style>
+    </head>
+    <body>
+        <div class="section-1">
+            <div class="header-info d-flex">
+              <div
+                class="info-section d-flex justify-content-center align-items-center flex-fill ml-lg-n5"
+              >
+                <p>By using this site, you are consenting to the use of cookies for providing you optimum site performance, best user experience and tracking usage of our website to improve our product & services offerings.</p>
+              </div>
+      
+              
+            </div>
+      
+            <div class="navigation-bar d-flex align-items-center">
+              <div class="logo d-flex justify-content-center">
+                <img src="cargo.png"  class="" alt="" />
+                <h5 class="text-danger">
+                  Indian Airways
+                </h5>
+              </div>
+              <nav class="navbar navbar-expand d-flex justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="booktickets.html" class="nav-link">Book Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="bestoffers.html" class="nav-link">Best Offers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="checkreservation.html" class="nav-link">Check Reservation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="aboutus.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contactus.html" class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="flight">Flight Number</label>
+    <input type="text" class="form-control" id="flight">
+  </div>
+  <div class="form-group">
+    <label for="tct">Ticket Number</label>
+    <input type="text" class="form-control" id="tct">
+  </div>
+  <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <a href="#"  class="btn-primary" data-toggle="popover" title="Check Reservation" data-content="if your seat is reserved than it will show you yes.Otherwise, it will show no.">Submit</a>
+  <script>
+      $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+  </script>
+</form>
+</div>
+</body>
+</html>
